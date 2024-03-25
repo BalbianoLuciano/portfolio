@@ -1,0 +1,48 @@
+/* Styles for navs buttons */
+
+.li-border-half::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 50%;
+    background-color: #000;
+}
+
+/* Styles for h1 */
+
+.h1-border-half::after {
+    content: '';
+    display: block;
+    margin-top: 40px;
+    height: 10px;
+    width: 35%;
+    background-color: #557053;
+}
+
+/* Styles for sections titles */
+
+.sections-border-half::after {
+    content: '';
+    display: block;
+    margin-top: 20px;
+    height: 5px;
+    width: 60%;
+    background-color: #6F8665;
+}
+
+/* Styles for roles */
+
+.roles-border-half {
+    position: relative;
+}
+  
+.roles-border-half::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -30px; /* Ajusta según necesidad para alinear con el borde inferior del texto */
+    height: 5px;
+    width: 40%;
+    background-color: #BFC4AC;
+}
