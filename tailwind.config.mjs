@@ -4,10 +4,14 @@ export default {
 	theme: {
 		extend: {
 			width: {
-				'400': '400px'
+				'400': '400px',
+				'26' : '108px'
 			},
 			height: {
 				'400': '400px'
+			},
+			spacing: {
+				'25': '100px', 
 			},
 		},
 		colors: {
