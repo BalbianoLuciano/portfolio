@@ -1,0 +1,23 @@
+[
+    {
+      "id": 0,
+      "imageUrl": "/images/miguelMontesGarcia.PNG",
+      "link": "https://www.miguelmontesgarcia.org/",
+      "title": "montesTitle",
+      "technologies": ["astro.js", "react.js", "tailwind"]
+    },
+    {
+      "id": 1,
+      "imageUrl": "/images/amelaf.PNG",
+      "link": "https://amelaf.org.mx/",
+      "title": "amelafTitle",
+      "technologies": ["php", "symfony", "scss"]
+    },
+    {
+      "id": 2,
+      "imageUrl": "/images/arquihub.PNG",
+      "link": "https://arquihub.vercel.app/",
+      "title": "arquihubTitle",
+      "technologies": ["react.js", "node.js", "tailwind"]
+    }
+]
