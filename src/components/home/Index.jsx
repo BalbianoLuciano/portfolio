@@ -20,7 +20,7 @@ const Index = () => {
         </div>
       </div>
       <div className="flex flex-row relative">
-        <div className="flex w-5/6 flex-col justify-end px-10 py-14 bg-05 max-w-[800px]">
+        <div className="flex w-5/6 flex-col justify-end px-10 py-14 max-h-[300px] bg-05 max-w-[800px]">
           <div className="mt-24 text-4xl font-black roles-border-half text-right text-00 tracking-[3.6px] max-md:mt-10 max-md:max-w-full">
             {t("role1")}
             <br />
@@ -28,18 +28,18 @@ const Index = () => {
             <br />
             <div className="flex justify-end space-x-8 mt-5">
               <div>
-                <i className="bi bi-github"></i>
+                <i className="bi bi-github hover:text-02 cursor-pointer"></i>
               </div>
               <div>
-                <i className="bi bi-instagram"></i>
+                <i className="bi bi-instagram hover:text-02 cursor-pointer"></i>
               </div>
               <div>
-                <i className="bi bi-linkedin"></i>
+                <i className="bi bi-linkedin hover:text-02 cursor-pointer"></i>
               </div>
             </div>
           </div>
         </div>
-        <div className="text-6xl absolute -right-24 bottom-36 sections-border-half font-medium text-04 tracking-[.10em] -rotate-90">
+        <div className="text-6xl absolute -right-[100px] bottom-36 sections-border-half font-medium text-04 tracking-[.10em] -rotate-90">
           {t("introduction")}
         </div>
       </div>
