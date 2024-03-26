@@ -7,6 +7,14 @@
     "everyone": "everyone!",
     "role1": "ux/ui designer",
     "role2": "fullstack developer",
-    "introduction": "i'm Luciano"
+    "introduction": "i'm Luciano",
+    "about me" : "about me",
+    "description" : "Passionate about technology, creative and with innovative ideas. Ease to lead groups and improve their performance. I am also passionate about video games and I am open to learning any kind of activity related to them.",
+    "works title" : "works",
+    "arquihubTitle": "Arquihub: Your favorite architecture site",
+    "amelafTitle": "Mexican Association of Pharmaceutical Laboratories",
+    "montesTitle": "Website in tribute to Mr. Miguel Montes de García",
+    "link to": "view site",
+    "tech skills": "tech skills",
+    "tecnologies": "These are some of the technologies I use."
 }
-  
