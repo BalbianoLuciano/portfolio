@@ -2,14 +2,34 @@
 import Layout from '../layouts/Layout.astro';
 import Home  from "../components/home/Index";
 import Sidebar from "../components/sidebar/Index";
+import About from "../components/sections/About";
+import Works from "../components/sections/Works";
+import Skills from "../components/sections/Skills";
 import Nav from "../components/layouts/Nav";
+import Education from "../components/sections/Education";
 ---
 
 <Layout title="Balbiano Luciano">
-	<div class="flex flex-row h-screen font-outfit">
+	<div class="flex flex-row font-outfit">
 		<div class="w-4/6">
 			<Nav />
-			<Home client:only />
+			<div class="space-y-32">
+				<div>
+					<Home client:only />
+				</div>
+				<div>
+					<About client:only />
+				</div>
+				<div>
+					<Works client:only/>
+				</div>
+				<div>
+					<Skills client:only/>
+				</div>
+				<div>
+					<Education client:only/>
+				</div>
+			</div>
 		</div>
 		<div class="w-2/6 bg-03">
 			<Sidebar client:only />
