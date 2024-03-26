@@ -1,48 +1,196 @@
 /* Styles for navs buttons */
 
+.li-border-half {
+  cursor: pointer;
+}
+
 .li-border-half::after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 50%;
-    background-color: #000;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 50%;
+  background-color: #000;
+}
+.li-border-half:hover::after {
+  width: 100%; /* Completa la línea al hacer hover */
+  transition: width 0.5s ease; /* Transición suave de la línea */
 }
 
 /* Styles for h1 */
 
 .h1-border-half::after {
-    content: '';
-    display: block;
-    margin-top: 40px;
-    height: 10px;
-    width: 35%;
-    background-color: #557053;
+  content: "";
+  display: block;
+  margin-top: 40px;
+  height: 10px;
+  width: 35%;
+  background-color: #557053;
 }
 
 /* Styles for sections titles */
 
 .sections-border-half::after {
-    content: '';
-    display: block;
-    margin-top: 20px;
-    height: 5px;
-    width: 60%;
-    background-color: #6F8665;
+  content: "";
+  display: block;
+  margin-top: 20px;
+  height: 5px;
+  width: 60%;
+  background-color: #6f8665;
+}
+
+.cards-border-half::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  height: 2px;
+  width: 40%;
+  background-color: #6f8665;
 }
 
 /* Styles for roles */
 
 .roles-border-half {
+  position: relative;
+}
+
+.roles-border-half::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -30px; /* Ajusta según necesidad para alinear con el borde inferior del texto */
+  height: 5px;
+  width: 40%;
+  background-color: #bfc4ac;
+}
+
+.subtitles-border-half{
     position: relative;
 }
-  
-.roles-border-half::after {
-    content: '';
+
+.subtitles-border-half::after {
+    content: "";
     display: block;
     position: absolute;
     right: 0;
-    bottom: -30px; /* Ajusta según necesidad para alinear con el borde inferior del texto */
+    bottom: -20px; /* Ajusta según necesidad para alinear con el borde inferior del texto */
     height: 5px;
     width: 40%;
-    background-color: #BFC4AC;
+    background-color: #bfc4ac;
+  }
+/* ExpandingCards.css */
+
+.containerCard {
+  display: flex;
+  width: 100%; /* Adaptado para ocupar el ancho completo del contenedor padre */
+  height: 100%;
 }
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #557053;
+  cursor: pointer;
+  width: 100%;
+  flex-basis: calc(30% - 34px); /* Ajusta este valor para el tamaño inicial */
+  position: relative;
+  transition: flex-basis 200ms ease-in, opacity 200ms ease-in;
+  opacity: 0.8;
+}
+
+.panel.active {
+  flex-basis: 50%; /* Ajusta para el tamaño activo */
+  opacity: 1;
+}
+
+.infoContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Espacia el contenido verticalmente */
+  align-items: flex-start; /* Alinea el contenido a la izquierda */
+  background-color: rgba(163, 177, 138);
+  color: #3a5a40;
+}
+
+/* Estilos para el contenedor de badges */
+.techBadges {
+  position: absolute;
+  top: 10px; /* Ajusta la posición superior según sea necesario */
+  left: 10px; /* Ajusta la posición izquierda según sea necesario */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espacio entre badges */
+}
+
+/* Estilos para cada badge individual */
+.techBadge {
+  background-color: #A3B18A; /* Fondo de cada badge */
+  color: #ffffff; /* Color del texto de cada badge */
+  padding: 5px 10px; /* Relleno interno de cada badge */
+  font-size: 0.8em; /* Tamaño del texto de cada badge */
+}
+
+/* Card animated button */
+
+.button {
+    line-height: 1;
+    text-decoration: none;
+    align-self: flex-end;
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    background-color: #557053;
+    color: #fff;
+    font-weight: 600;
+    padding: .75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color .3s;
+  }
+  
+  .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: #557053;
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .button:hover {
+    background-color: #A3B18A;
+    border: 2px solid #557053;
+    color: #557053;
+  }
+  
+  .button:hover .button__icon-wrapper {
+    color: #557053;
+  }
+  
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .button:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .button:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s;
+    transform: translate(0);
+  }
