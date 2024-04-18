@@ -28,7 +28,7 @@ const ExpandingCards = () => {
             <h3 className="cards-border-half">{t(card.title)}</h3>
             {card.id === activeIndex && (
               <a
-                class="button"
+                className="button"
                 rel="noopener noreferrer"
                 href={card.link}
                 target="_blank"
