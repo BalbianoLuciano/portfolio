@@ -21,5 +21,10 @@
     "view certificate": "ver certificado",
     "certificado 1": "Diseño UX: experiencia de usuario UX/UI + Figma 2024",
     "certificado 2": "Aprende C# y crea un videojuego con Unity",
-    "certificado 3": "Desarrollador fullstack"
+    "certificado 3": "Desarrollador fullstack",
+    "contact": "contactame",
+    "fullName": "Nombre completo",
+    "email": "Email",
+    "message": "Mensaje",
+    "send": "Enviar"
 }

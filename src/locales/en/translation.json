@@ -21,5 +21,10 @@
     "view certificate": "view certificate",
     "certificado 1": "UX Design: UX/UI user experience + Figma 2024",
     "certificado 2": "Learn C# and make a videogame with Unity",
-    "certificado 3": "Fullstack developer"
+    "certificado 3": "Fullstack developer",
+    "contact": "contact me",
+    "fullName": "Full name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
 }
