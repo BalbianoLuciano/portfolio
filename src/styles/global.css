@@ -194,3 +194,28 @@
     transition: transform .3s ease-in-out .1s;
     transform: translate(0);
   }
+
+.sections-border-timeline-first-half::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 3px;
+  width: 40%;
+  background-color: #ffffff;
+}
+
+.sections-border-timeline-second-half{
+  position: relative;
+}
+
+.sections-border-timeline-second-half::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  display: block;
+  margin-top: 10px;
+  height: 3px;
+  width: 40%;
+  background-color: #ffffff;
+}
