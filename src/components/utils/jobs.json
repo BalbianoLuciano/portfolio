@@ -1,0 +1,53 @@
+[
+  {
+    "title": "Freelance Developer",
+    "date": "02/2023",
+    "description": "I started as a freelance developer."
+  },
+  {
+    "title": "Persona Intellisense",
+    "date": "02/2023 - 05/2023",
+    "description": "Website developed with PHP and Laravel."
+  },
+  {
+    "title": "Olen life",
+    "date": "06/2023 - 07/2023",
+    "description": "Website developed with wordpress."
+  },
+  {
+    "title": "Kolektor",
+    "date": "09/2023 - 10/2023",
+    "description": "Integration of the Twitter ApiV2 for obtaining and managing data. PHP 5.4"
+  },
+  {
+    "title": "Official site of Mr. Miguel Montes García",
+    "date": "11/2023 - 01/2024",
+    "description": "Website developed with astro.js and react.js"
+  },
+  {
+    "title": "Bzz Bzz web",
+    "date": "01/2024",
+    "description": "Update of styles, assets and functionality - PHP 7.4 and symfony"
+  },
+  {
+    "title": "Website of the Mexican Association of Pharmaceutical Laboratories",
+    "date": "02/2024 - 03/2024",
+    "description": "Update of styles, assets and functionalities both on the main website and in the supply chain (internal service) - PHP 7.4 and symfony"
+  },
+  {
+    "title": "Bia Pachuca",
+    "date": "03/2024",
+    "description": "Update of styles, assets and functionalities. Web developed with wordpress"
+  },
+  {
+    "title": "Rb architects",
+    "date": "03/2024 - Now",
+    "description": "Website developed with PHP and Laravel."
+  },
+  {
+    "title": "Freelance Developer",
+    "date": "Now",
+    "description": "Continue working as a freelance developer."
+  }
+
+]
