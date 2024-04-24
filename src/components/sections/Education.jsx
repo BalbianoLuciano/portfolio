@@ -10,7 +10,7 @@ const Education = () => {
   return (
     <div className="">
       <div className="flex flex-row relative">
-        <div className="flex w-5/6 flex-col justify-center p-5 bg-05 max-h-[300px] max-w-[800px]">
+        <div className="flex w-5/6 flex-col justify-center p-5 bg-05 max-h-[300px] max-w-[800px] 2xl:max-w-[1200px]">
           {certificatesContent.map((certificate) => (
             <div
               key={certificate.id}

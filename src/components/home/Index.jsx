@@ -20,7 +20,7 @@ const Index = () => {
         </div>
       </div>
       <div className="flex flex-row relative">
-        <div className="flex w-5/6 flex-col justify-end px-10 py-14 max-h-[300px] bg-05 max-w-[800px]">
+        <div className="flex w-5/6 flex-col justify-end px-10 py-14 max-h-[300px] bg-05 max-w-[800px] 2xl:max-w-[1200px]">
           <div className="mt-24 text-4xl font-black roles-border-half text-right text-00 tracking-[3.6px] max-md:mt-10 max-md:max-w-full">
             {t("role1")}
             <br />

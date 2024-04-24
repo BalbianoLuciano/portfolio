@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="">
       <div className="flex flex-row relative">
-        <div className="flex w-5/6 flex-col justify-end px-10 py-14 h-96 bg-05 max-h-[300px] max-w-[800px]">
+        <div className="flex w-5/6 flex-col justify-end px-10 py-14 h-96 bg-05 max-h-[300px] max-w-[800px] 2xl:max-w-[1200px]">
           <div className="mt-24 text-l font-normal roles-border-half text-right text-00 max-md:mt-10 max-md:max-w-full">
             {t("description")}
           </div>
