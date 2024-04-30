@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <div className="">
       <div className="flex flex-row relative">
-        <div className="flex w-5/6 flex-col justify-between p-5 bg-05 h-96 max-h-[500px] max-w-[800px] 2xl:max-w-[1200px]">
+        <div className="flex w-5/6 flex-col justify-between p-5 bg-05 h-96 max-h-[300px] xl:max-h-[500px] max-w-[800px] 2xl:max-w-[1200px]">
           <div className="flex flex-col w-full">
             {/* Contenedor para Back-end */}
             <div className="flex flex-col">
@@ -78,7 +78,7 @@ const Skills = () => {
             {t("tecnologies")}
           </h3>
         </div>
-        <div className="text-6xl absolute -right-[74px] bottom-32 sections-border-half font-medium text-04 tracking-[.10em] -rotate-90">
+        <div className="text-4xl absolute xl:text-5xl xl:-right-[55px] xl:bottom-[100px] -right-[45px] bottom-[75px] sections-border-half font-medium text-04 tracking-[.10em] -rotate-90">
           {t("tech skills")}
         </div>
       </div>

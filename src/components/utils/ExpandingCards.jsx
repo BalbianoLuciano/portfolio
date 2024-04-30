@@ -25,7 +25,7 @@ const ExpandingCards = () => {
             </div>
           )}
           <div className="infoContainer">
-            <h3 className="cards-border-half">{t(card.title)}</h3>
+            <h3 className="text-xs xl:text-sm 2xl:text-base cards-border-half">{t(card.title)}</h3>
             {card.id === activeIndex && (
               <a
                 className="button"
