@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <div className="text-center space-y-5 p-10 mt-20">
       {/* Primera línea: Enlaces a secciones */}
-      <div className="text-xl text-05 pb-4">
+      <div className="text-xl pb-4">
         {["Home", "About", "Works", "Tech Skills", "Education"].map((section) => (
-          <a href={`#${section.toLowerCase()}`} className="px-2">
+          <a href={`#${section.toLowerCase()}`} className="px-2 text-05 font-bold hover:text-02">
             {section}
           </a>
         ))}
