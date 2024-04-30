@@ -3,6 +3,13 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			fontSize: {
+				'custom': '2rem',
+				'customTwo': '1.5rem'
+			},
+			screens: {
+				'monitor': '1920px',
+			},
 			width: {
 				'400': '400px',
 				'26' : '108px'
