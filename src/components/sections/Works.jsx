@@ -8,7 +8,7 @@ const Works = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="">
+    <div className="" id="works">
       <div className="flex flex-row relative">
         <div className="flex w-5/6 flex-col bg-05 h-96 max-h-[300px] xl:max-h-[440px] max-w-[800px] 2xl:max-w-[1200px]">
             <ExpandingCards />

@@ -7,7 +7,7 @@ const Index = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="">
+    <div className="" id="home">
       <div className="flex flex-row mt-8 xl:mt-10">
         <img src="images/paracv.jpg" alt="Profile" className="w-150 h-150 xl:w-400 xl:h-400" />
         <div className="flex flex-col pl-4">

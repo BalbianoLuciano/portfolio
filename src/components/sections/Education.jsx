@@ -8,7 +8,7 @@ const Education = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="">
+    <div className="" id="education">
       <div className="flex flex-row relative">
         <div className="flex w-5/6 flex-col justify-center p-5 bg-05 max-h-[255px] xl:max-h-[300px] max-w-[800px] 2xl:max-w-[1200px]">
           {certificatesContent.map((certificate) => (

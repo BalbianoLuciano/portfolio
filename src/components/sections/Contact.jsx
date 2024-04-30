@@ -8,7 +8,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div id="contact">
       <h3 className="text-7xl xl:text-8xl 2xl:text-9xl h1-border-half mb-10 xl:mb-20 tracking-widest font-black text-05">
         {t("contact")}
       </h3>

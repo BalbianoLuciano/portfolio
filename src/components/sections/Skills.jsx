@@ -7,7 +7,7 @@ const Skills = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="">
+    <div className="" id="skills">
       <div className="flex flex-row relative">
         <div className="flex w-5/6 flex-col justify-between p-5 bg-05 h-96 max-h-[300px] xl:max-h-[500px] max-w-[800px] 2xl:max-w-[1200px]">
           <div className="flex flex-col w-full">

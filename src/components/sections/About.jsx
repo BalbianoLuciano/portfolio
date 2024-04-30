@@ -7,7 +7,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="">
+    <div className="" id="about">
       <div className="flex flex-row relative">
         <div className="flex w-5/6 flex-col justify-end px-5 xl:px-10 py-7 xl:py-14 h-96 bg-05 max-h-[200px] xl:max-h-[300px] max-w-[800px] 2xl:max-w-[1200px]">
           <div className="text-sm xl:text-lg font-normal roles-border-half text-right text-00">
