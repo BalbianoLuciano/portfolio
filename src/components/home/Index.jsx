@@ -57,10 +57,10 @@ const Index = () => {
             className="w-52 h-52"
           />
           <div className="flex flex-col justify-center">
-            <h1 className="text-4xl tracking-[.20em] font-extrabold text-05">
+            <h1 className="text-4xl tracking-[.20em] font-extrabold text-07">
               {t("hi")}
             </h1>
-            <h2 className="text-4xl tracking-[.20em] h1-border-half text-05 font-extrabold">
+            <h2 className="text-4xl tracking-[.20em] h1-border-half text-07 font-extrabold">
               {t("everyone")}
             </h2>
           </div>
