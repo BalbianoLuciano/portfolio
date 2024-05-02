@@ -7,7 +7,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="contact" className="p-5">
+    <div id="contact">
       <h3 className="text-7xl xl:text-8xl 2xl:text-9xl h1-border-half mb-10 xl:mb-20 tracking-[1rem] lg:tracking-[.10em] font-black text-05">
         {t("contact")}
       </h3>
