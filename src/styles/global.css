@@ -254,3 +254,44 @@
     padding: .75rem 1.5rem;
   }
 }
+
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 1024px) {
+  .containerCard {
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    width: 100%;
+    height: 1000px;
+  }
+
+  .panel {
+    max-height: 100%;
+    margin: 0; /* Elimina cualquier margen para que las tarjetas se extiendan completamente */
+  }
+
+  .infoContainer {
+    color: #bfc4ac;
+    position: static; /* Cambia la posición a estática para que siga el flujo normal */
+    width: 100%; /* Ajusta el ancho al 100% para llenar la tarjeta */
+    height: auto; /* Permite que el contenedor se ajuste al contenido */
+    background-color: #557053; /* Elimina el fondo para un diseño más limpio */
+  }
+
+  .techBadges {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre badges */
+  }
+
+  .button {
+    background-color: #A3B18A;
+    align-self: flex-end; /* Centra el botón en la tarjeta */
+    margin-top: 10px; /* Agrega un margen superior para espacio visual */
+  }
+
+  /* Elimina efectos hover en dispositivos móviles donde no aplican */
+  .button:hover {
+    background-color: #557053; /* Mantiene el color original al hacer hover */
+  }
+}
