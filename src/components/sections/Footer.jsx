@@ -5,7 +5,7 @@ const Footer = () => {
   // Definir los detalles de las redes sociales incluyendo nombres y URLs
 
   return (
-    <div className="text-center space-y-5 p-10 mt-20">
+    <div className="text-center font-outfit space-y-5 p-10 mt-20">
       {/* Primera línea: Enlaces a secciones */}
       <div className="text-xl pb-4">
         {["Home", "About", "Works", "Tech Skills", "Education"].map((section) => (
