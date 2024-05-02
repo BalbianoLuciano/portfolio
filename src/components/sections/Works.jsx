@@ -1,7 +1,6 @@
 import React from "react";
 import "../utils/118n";
 import { useTranslation } from "react-i18next";
-import "../../styles/global.css";
 import ExpandingCards from "../utils/ExpandingCards";
 
 const Works = () => {
@@ -18,7 +17,7 @@ const Works = () => {
         </div>
       </div>
       <div className="bg-01 flex flex-col justify-between p-5 w-full lg:hidden">
-        <div className="text-5xl font-extrabold pb-5 text-04 tracking-[.10em]">
+        <div className="text-5xl font-extrabold pb-5 text-04 tracking-[1rem] lg:tracking-[.10em]">
           {t("works title")}
         </div>
         <div className="bg-05">
