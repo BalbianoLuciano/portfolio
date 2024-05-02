@@ -13,9 +13,9 @@ import Footer from '../components/sections/Footer';
 
 <Layout title="Balbiano Luciano">
 	<div class="flex flex-row font-outfit">
-		<div class="w-4/6">
+		<div class="w-full lg:w-4/6">
 			<Nav />
-			<div class="space-y-32">
+			<div class="lg:space-y-32">
 				<div>
 					<Home client:only />
 				</div>
@@ -36,7 +36,7 @@ import Footer from '../components/sections/Footer';
 				</div>
 			</div>
 		</div>
-		<div class="w-2/6 bg-02">
+		<div class="hidden lg:block w-2/6 bg-02">
 			<Sidebar client:only />
 		</div>
 	</div>
