@@ -1,5 +1,7 @@
 /* Styles for navs buttons */
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 .li-border-half {
   cursor: pointer;
 }
@@ -103,6 +105,9 @@
   flex-basis: 50%; /* Ajusta para el tamaño activo */
   opacity: 1;
 }
+.panel.active .button {
+  display: inline-flex; /* Muestra el botón solo si el panel está activo */
+}
 
 .infoContainer {
   position: absolute;
@@ -116,17 +121,20 @@
   justify-content: space-between; /* Espacia el contenido verticalmente */
   align-items: flex-start; /* Alinea el contenido a la izquierda */
   background-color: rgba(163, 177, 138);
-  color: #3a5a40;
+  color: #375441;
 }
 
 /* Estilos para el contenedor de badges */
 .techBadges {
+  display: none;
   position: absolute;
   top: 10px; /* Ajusta la posición superior según sea necesario */
   left: 10px; /* Ajusta la posición izquierda según sea necesario */
-  display: flex;
   flex-wrap: wrap;
   gap: 10px; /* Espacio entre badges */
+}
+.panel.active .techBadges {
+  display: flex; /* Muestra el botón solo si el panel está activo */
 }
 
 /* Estilos para cada badge individual */
@@ -140,10 +148,10 @@
 /* Card animated button */
 
 .button {
+  display: none; /* Oculta el botón por defecto */
   line-height: 1;
   text-decoration: none;
   align-self: flex-end;
-  display: inline-flex;
   align-items: center;
   gap: .75rem;
   background-color: #557053;
@@ -156,6 +164,71 @@
   overflow: hidden;
   text-overflow: ellipsis;
   transition: background-color .3s;
+}
+
+
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 1024px) {
+  .containerCard {
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    width: 100%;
+    height: 1000px;
+  }
+
+  .panel {
+    margin: 0;
+    position: relative;
+    flex-basis: 100%; /* Sobrescribe flex-basis para ocupar todo el ancho disponible */
+    transition: none; /* Elimina las transiciones para desactivar animaciones */
+    cursor: default; /* Cambia el cursor a default, ya que no es interactivo */
+    opacity: 1; /* Asegura que la opacidad sea total, sin efectos */
+  }
+  .panel.active {
+    flex-basis: 100%; /* Ajusta para el tamaño activo */
+    opacity: 1;
+  }
+
+  .infoContainer {
+    color: #BFC4AC;
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Ajusta el ancho al 100% para llenar la tarjeta */
+    height: auto; /* Permite que el contenedor se ajuste al contenido */
+    background-color: #557053; /* Elimina el fondo para un diseño más limpio */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacia el contenido verticalmente */
+    align-items: flex-start;
+  }
+  .cards-border-half::after{
+    background-color: #BFC4AC;
+  }
+
+  .techBadges {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre badges */
+  }
+
+  .button {
+    background-color: #A3B18A;
+    align-self: flex-end; /* Centra el botón en la tarjeta */
+    margin-top: 10px; /* Agrega un margen superior para espacio visual */
+  }
+
+  /* Elimina efectos hover en dispositivos móviles donde no aplican */
+  .button:hover {
+    background-color: #557053; /* Mantiene el color original al hacer hover */
+    color: #A3B18A;
+  }
+  .button, .button.mobile-hidden, .techBadges, .techBadges.mobile-hidden {
+    display: inline-flex; /* Asegura que el botón siempre esté visible en móviles */
+  }
+  .sections-border-half::after, .h1-border-half::after, .subtitles-border-half::after, .roles-border-half::after {
+      display: none;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -252,46 +325,5 @@
   }
   .button{
     padding: .75rem 1.5rem;
-  }
-}
-
-
-/* Media queries para dispositivos móviles */
-@media (max-width: 1024px) {
-  .containerCard {
-    flex-direction: column; /* Cambia la dirección del flexbox a columna */
-    width: 100%;
-    height: 1000px;
-  }
-
-  .panel {
-    max-height: 100%;
-    margin: 0; /* Elimina cualquier margen para que las tarjetas se extiendan completamente */
-  }
-
-  .infoContainer {
-    color: #bfc4ac;
-    position: static; /* Cambia la posición a estática para que siga el flujo normal */
-    width: 100%; /* Ajusta el ancho al 100% para llenar la tarjeta */
-    height: auto; /* Permite que el contenedor se ajuste al contenido */
-    background-color: #557053; /* Elimina el fondo para un diseño más limpio */
-  }
-
-  .techBadges {
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /* Espacio entre badges */
-  }
-
-  .button {
-    background-color: #A3B18A;
-    align-self: flex-end; /* Centra el botón en la tarjeta */
-    margin-top: 10px; /* Agrega un margen superior para espacio visual */
-  }
-
-  /* Elimina efectos hover en dispositivos móviles donde no aplican */
-  .button:hover {
-    background-color: #557053; /* Mantiene el color original al hacer hover */
   }
 }
