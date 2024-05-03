@@ -9,7 +9,7 @@ const Works = () => {
   return (
     <div className="" id="works">
       <div className="hidden lg:flex flex-row relative">
-        <div className="flex w-5/6 flex-col bg-05 h-96 max-h-[300px] xl:max-h-[440px] max-w-[800px] 2xl:max-w-[1200px]">
+        <div className="flex w-5/6 flex-col shadow-sm bg-05 h-96 max-h-[300px] xl:max-h-[440px] max-w-[800px] 2xl:max-w-[1200px]">
           <ExpandingCards />
         </div>
         <div className="text-4xl -right-1 bottom-8 absolute xl:text-5xl xl:-right-0 xl:bottom-10 sections-border-half font-medium text-04 tracking-[.10em] -rotate-90">

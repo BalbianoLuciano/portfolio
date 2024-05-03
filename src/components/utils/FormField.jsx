@@ -7,7 +7,7 @@ const FormField = ({ id, label, type, placeholder, rows }) => {
     const { t } = useTranslation();
     return (
       <div>
-        <label htmlFor={id} className="block text-sm font-medium text-05">
+        <label htmlFor={id} className="block text-xl font-medium text-00 lg:text-05">
           {t(label)}
         </label>
         {type !== 'textarea' ? (

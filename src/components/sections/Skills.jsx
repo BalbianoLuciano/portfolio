@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <div className="" id="skills">
       <div className="flex flex-col-reverse lg:flex-row lg:relative">
-        <div className="flex w-full lg:w-5/6 flex-col justify-between p-5 bg-06 h-64 lg:h-96 max-h-[300px] xl:max-h-[500px] max-w-[800px] 2xl:max-w-[1200px]">
+        <div className="flex w-full shadow-sm lg:w-5/6 flex-col justify-between p-5 bg-06 max-h-[300px] xl:max-h-[500px] max-w-[800px] 2xl:max-w-[1200px]">
           <div className="flex flex-col w-full">
             {/* Contenedor para Back-end */}
             <div className="flex flex-col">

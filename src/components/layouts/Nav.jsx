@@ -9,11 +9,11 @@ const Nav = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="w-full mt-10">
+    <header className="w-full lg:p-10 relative">
       <nav className="flex flex-row lg:py-4">
         {/* Botón del menú de hamburguesa solo visible en pantallas menores a lg */}
-        <button className="hidden lg:hidden md:inline-block sm:inline-block xs:inline-block" onClick={toggleMenu}>
-          <i className="bi bi-list"></i>
+        <button className="lg:hidden pt-2 pl-2 absolute" onClick={toggleMenu}>
+          <i className="bi bi-list text-05 text-3xl"></i>
         </button>
         {/* Menú original que se oculta en tamaños menores a lg */}
         <ul className={`${isOpen ? "flex" : "hidden"} flex-col lg:flex lg:flex-row w-auto justify-evenly uppercase lg:uppercase`}>
