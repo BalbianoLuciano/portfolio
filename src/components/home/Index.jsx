@@ -59,7 +59,7 @@ const Index = () => {
           {t("introduction")}
         </div>
         <div className="flex flex-row">
-          <div className="bg-white w-4/12 h-[700px]"></div>
+          <div className="w-4/12 h-[700px]"></div>
           <div className="bg-04 w-8/12 h-[700px] flex flex-col items-start justify-end gap-2 px-2 pb-8">
             <h1 className="text-4xl tracking-[.20em] text-00 font-extrabold">
               {t("hi")}
