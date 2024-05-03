@@ -86,7 +86,7 @@ const Index = () => {
             </div>
             <div className="flex flex-col gap-2">
               <a
-                href="#contactme"
+                href="#contact"
                 className="bg-05 text-xl text-center hover:bg-00 hover:text-07 border-2 border-05 hover:border-2 text-00 py-2 px-1"
               >
                 contact me
