@@ -9,7 +9,7 @@ const Education = () => {
   return (
     <div className="" id="education">
       <div className="flex flex-col-reverse lg:flex-row lg:relative">
-        <div className="flex w-full lg:w-5/6 flex-col justify-center p-5 bg-00 lg:bg-05 max-h-max lg:max-h-[255px] xl:max-h-[300px] max-w-[800px] 2xl:max-w-[1200px]">
+        <div className="flex w-full shadow-sm lg:w-5/6 flex-col justify-center p-5 bg-00 lg:bg-05 max-h-max lg:max-h-[255px] xl:max-h-[300px] max-w-[800px] 2xl:max-w-[1200px]">
           {certificatesContent.map((certificate) => (
             <div
               key={certificate.id}
@@ -21,20 +21,20 @@ const Education = () => {
                     src={certificate.icon}
                     alt=""
                     width="50px"
-                    className="mr-1 xl:mr-4"
+                    className="mr-2 xl:mr-4"
                   />
                 ) : (
                   // Si no es PNG, asumimos que es SVG o algún otro formato manejado de manera diferente
                   <div
                     dangerouslySetInnerHTML={{ __html: certificate.icon }}
-                    className="mr-1 xl:mr-4"
+                    className="mr-2 xl:mr-4"
                   />
                 )}
                 <div className="flex flex-col">
-                  <h3 className="text-xs text-00 lg:text-07 xl:text-base">
+                  <h3 className="text-xs w-[120px] lg:w-auto text-00 lg:text-07 xl:text-base">
                     {t(certificate.title)}
                   </h3>
-                  <h3 className="text-xs text-00 lg:text-07 xl:text-base">
+                  <h3 className="text-xs  w-[120px] lg:w-auto text-00 lg:text-07 xl:text-base">
                     {t(certificate.subtitle)}
                   </h3>
                 </div>
@@ -43,7 +43,7 @@ const Education = () => {
                 href={certificate.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-00 xl:px-2 xl:py-1 2xl:px-4 2xl:py-2 px-2 py-1 text-xs bg-07 text-00 lg:text-06 lg:bg-00 border-2 lg:border-06  hover:bg-06 hover:text-00 transition-colors"
+                className="border-00 xl:px-2 xl:py-1 2xl:px-4 2xl:py-2 px-2 py-1 text-sm lg:text-base bg-07 text-00 lg:text-06 lg:bg-00 border-2 lg:border-06  hover:bg-06 hover:text-00"
               >
                 {t("view certificate")}
                 <i className="bi bi-download pl-2"></i>
