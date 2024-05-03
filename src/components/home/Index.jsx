@@ -32,15 +32,15 @@ const Index = () => {
               {t("role2")}
               <br />
               <div className="flex justify-end space-x-2 xl:space-x-8 mt-2 xl:mt-5">
-                <div>
-                  <i className="bi bi-github hover:text-02 cursor-pointer"></i>
-                </div>
-                <div>
-                  <i className="bi bi-instagram hover:text-02 cursor-pointer"></i>
-                </div>
-                <div>
-                  <i className="bi bi-linkedin hover:text-02 cursor-pointer"></i>
-                </div>
+                <a href="https://github.com/BalbianoLuciano" target="_blank">
+                  <i className="bi bi-github text-3xl text-00 hover:text-03 cursor-pointer"></i>
+                </a>
+                <a href="https://www.instagram.com/luciano_balbiano/" target="_blank">
+                  <i className="bi bi-instagram text-3xl text-00 hover:text-03 cursor-pointer"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/luciano-balbiano/" target="_blank">
+                  <i className="bi bi-linkedin text-3xl text-00 hover:text-03 cursor-pointer"></i>
+                </a>
               </div>
             </div>
           </div>
