@@ -31,10 +31,10 @@ const Education = () => {
                   />
                 )}
                 <div className="flex flex-col">
-                  <h3 className="text-xs w-[120px] lg:w-auto text-00 lg:text-07 xl:text-base">
+                  <h3 className="text-xs w-[110px] lg:w-auto text-00 lg:text-07 xl:text-base">
                     {t(certificate.title)}
                   </h3>
-                  <h3 className="text-xs  w-[120px] lg:w-auto text-00 lg:text-07 xl:text-base">
+                  <h3 className="text-xs  w-[110px] lg:w-auto text-00 lg:text-07 xl:text-base">
                     {t(certificate.subtitle)}
                   </h3>
                 </div>
