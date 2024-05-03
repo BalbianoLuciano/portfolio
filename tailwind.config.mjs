@@ -31,6 +31,8 @@ export default {
 			'01': '#B1BB9B',
 			'00': '#BFC4AC',
 			'dark': '#000000',
+			'danger': '#CDA2AB',
+			'success': '#6F8665',
 			'white': '#ffffff',
 		},
 		fontFamily: {
