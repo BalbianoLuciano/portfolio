@@ -74,15 +74,15 @@ const Index = () => {
               </p>
             </div>
             <div className="flex justify-end space-x-4">
-              <div>
+              <a href="https://github.com/BalbianoLuciano">
                 <i className="bi bi-github text-2xl text-00 hover:text-03 cursor-pointer"></i>
-              </div>
-              <div>
+              </a>
+              <a href="https://www.instagram.com/luciano_balbiano/">
                 <i className="bi bi-instagram text-2xl text-00 hover:text-03 cursor-pointer"></i>
-              </div>
-              <div>
+              </a>
+              <a href="https://www.linkedin.com/in/luciano-balbiano/">
                 <i className="bi bi-linkedin text-2xl text-00 hover:text-03 cursor-pointer"></i>
-              </div>
+              </a>
             </div>
             <div className="flex flex-col gap-2">
               <a
