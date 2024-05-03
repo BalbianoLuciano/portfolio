@@ -4,6 +4,7 @@ import jobs from "../utils/jobs.json";
 const Sidebar = () => {
   // Estado para manejar el ancho de la ventana
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const cvLink = "https://drive.google.com/uc?export=download&id=1rvwYSxSlqNP2W1hKr0rTKfBvFtRAVB6D"; // Enlace modificado para descarga directa
 
   // Añadir un listener al tamaño de la ventana
   useEffect(() => {
@@ -31,15 +32,14 @@ const Sidebar = () => {
           contact me
         </a>
 
-        <button
-          onClick={() => {
-            /* Lógica para descargar el CV */
-          }}
-          className="px-2 py-4 text-2xl xl:text-3xl 2xl:text-4xl text-06 bg-02 border-2 border-06 hover:bg-07 hover:text-00 transition-colors"
+        <a
+          href={cvLink}
+          download="Luciano_Balbiano_CV.pdf" // Asegúrate de que el nombre del archivo es el deseado
+          className="px-1 py-4 text-center text-4xl text-06 bg-02 border-2 border-06 hover:bg-07 hover:text-00 transition-colors"
         >
           download cv
           <i className="bi bi-download w-6 pl-2"></i>
-        </button>
+        </a>
       </div>
 
       <div className="relative border-gray-700 h-full">

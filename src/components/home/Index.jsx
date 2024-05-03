@@ -5,6 +5,7 @@ import "../../styles/global.css";
 
 const Index = () => {
   const { t } = useTranslation();
+  const cvLink = "https://drive.google.com/uc?export=download&id=1rvwYSxSlqNP2W1hKr0rTKfBvFtRAVB6D"; // Enlace modificado para descarga directa
 
   return (
     <div className="" id="home">
@@ -35,10 +36,16 @@ const Index = () => {
                 <a href="https://github.com/BalbianoLuciano" target="_blank">
                   <i className="bi bi-github text-3xl text-00 hover:text-03 cursor-pointer"></i>
                 </a>
-                <a href="https://www.instagram.com/luciano_balbiano/" target="_blank">
+                <a
+                  href="https://www.instagram.com/luciano_balbiano/"
+                  target="_blank"
+                >
                   <i className="bi bi-instagram text-3xl text-00 hover:text-03 cursor-pointer"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/luciano-balbiano/" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/luciano-balbiano/"
+                  target="_blank"
+                >
                   <i className="bi bi-linkedin text-3xl text-00 hover:text-03 cursor-pointer"></i>
                 </a>
               </div>
@@ -92,15 +99,14 @@ const Index = () => {
                 contact me
               </a>
 
-              <button
-                onClick={() => {
-                  /* Lógica para descargar el CV */
-                }}
+              <a
+                href={cvLink}
+                download="Luciano_Balbiano_CV.pdf" // Asegúrate de que el nombre del archivo es el deseado
                 className="px-1 py-2 text-xl text-06 bg-02 border-2 border-06 hover:bg-07 hover:text-00 transition-colors"
               >
                 download cv
                 <i className="bi bi-download w-6 pl-2"></i>
-              </button>
+              </a>
             </div>
           </div>
         </div>
