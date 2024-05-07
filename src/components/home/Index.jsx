@@ -12,7 +12,7 @@ const Index = () => {
       <div className="hidden lg:block">
         <div className="flex flex-row mt-8 xl:mt-10">
           <img
-            src="images/paracv.jpg"
+            src="images/cvpro.jpeg"
             alt="Profile"
             className="w-150 h-150 xl:w-400 xl:h-400"
           />
@@ -58,7 +58,7 @@ const Index = () => {
       </div>
       <div className="lg:hidden relative">
         <img
-          src="images/paracv.jpg"
+          src="images/cvpro.jpeg"
           alt="Profile"
           className="w-64 h-54 absolute left-1/2 top-1/3 transform -translate-x-1/2 -translate-y-1/2"
         />
