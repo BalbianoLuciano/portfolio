@@ -4,7 +4,8 @@ import jobs from "../utils/jobs.json";
 const Sidebar = () => {
   // Estado para manejar el ancho de la ventana
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const cvLink = "https://drive.google.com/uc?export=download&id=1rvwYSxSlqNP2W1hKr0rTKfBvFtRAVB6D"; // Enlace modificado para descarga directa
+  const cvLinkEsp = "https://drive.google.com/uc?export=download&id=1uZEg0s2zWZDGhuZygqaQ1-Ec_6D3cJD3"; // Enlace de descarga directa para la versión ESP
+  const cvLinkEng = "https://drive.google.com/uc?export=download&id=1ZBxfxompWZ9NCcxtattN6b0DEQHraBxj"; // Enlace de descarga directa para la versión ENG
 
   // Añadir un listener al tamaño de la ventana
   useEffect(() => {
@@ -24,7 +25,7 @@ const Sidebar = () => {
 
   return (
     <div className="text-white px-3 py-8 xl:px-5 xl:py-16 space-y-4 h-full overflow-hidden">
-      <div className="flex flex-col gap-10 px-4">
+      <div className="flex flex-col gap-5 px-4">
         <a
           href="#contactme"
           className="bg-05 text-2xl text-center xl:text-3xl 2xl:text-4xl hover:bg-00 hover:text-07 border-2 border-05 hover:border-2 text-00 py-4 px-2"
@@ -32,14 +33,24 @@ const Sidebar = () => {
           contact me
         </a>
 
-        <a
-          href={cvLink}
-          download="Luciano_Balbiano_CV.pdf" // Asegúrate de que el nombre del archivo es el deseado
-          className="px-1 py-4 text-center text-4xl text-06 bg-02 border-2 border-06 hover:bg-07 hover:text-00 transition-colors"
-        >
-          download cv
-          <i className="bi bi-download w-6 pl-2"></i>
-        </a>
+        <div className="flex flex-col gap-5">
+          <a
+            href={cvLinkEsp}
+            download="Luciano_Balbiano_CV_ESP.pdf"
+            className="px-1 py-2 text-xl text-center text-06 bg-02 border-2 border-06 hover:bg-07 hover:text-00 transition-colors"
+          >
+            Descargar CV (Español)
+            <i className="bi bi-download w-6 pl-2"></i>
+          </a>
+          <a
+            href={cvLinkEng}
+            download="Luciano_Balbiano_CV_ENG.pdf"
+            className="px-1 py-2 text-xl text-center text-06 bg-02 border-2 border-06 hover:bg-07 hover:text-00 transition-colors"
+          >
+            Download CV (English)
+            <i className="bi bi-download w-6 pl-2"></i>
+          </a>
+        </div>
       </div>
 
       <div className="relative border-gray-700 h-full">
