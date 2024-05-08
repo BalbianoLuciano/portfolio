@@ -5,14 +5,15 @@ import "../../styles/global.css";
 
 const Index = () => {
   const { t } = useTranslation();
-  const cvLink = "https://drive.google.com/uc?export=download&id=1rvwYSxSlqNP2W1hKr0rTKfBvFtRAVB6D"; // Enlace modificado para descarga directa
+  const cvLinkEsp = "https://drive.google.com/uc?export=download&id=1uZEg0s2zWZDGhuZygqaQ1-Ec_6D3cJD3"; // Enlace de descarga directa para la versión ESP
+  const cvLinkEng = "https://drive.google.com/uc?export=download&id=1ZBxfxompWZ9NCcxtattN6b0DEQHraBxj"; // Enlace de descarga directa para la versión ENG
 
   return (
     <div className="" id="home">
       <div className="hidden lg:block">
         <div className="flex flex-row mt-8 xl:mt-10">
           <img
-            src="images/paracv.jpg"
+            src="images/cvpro.jpeg"
             alt="Profile"
             className="w-150 h-150 xl:w-400 xl:h-400"
           />
@@ -58,20 +59,20 @@ const Index = () => {
       </div>
       <div className="lg:hidden relative">
         <img
-          src="images/paracv.jpg"
+          src="images/cvpro.jpeg"
           alt="Profile"
-          className="w-64 h-54 absolute left-1/2 top-1/3 transform -translate-x-1/2 -translate-y-1/2"
+          className="w-64 h-54 absolute left-1/2 top-48 transform -translate-x-1/2 -translate-y-1/2"
         />
         <div className="text-4xl tracking-[.20em] -translate-x-7 top-[30rem]  absolute font-medium text-04 -rotate-90">
           {t("introduction")}
         </div>
         <div className="flex flex-row">
           <div className="w-4/12 h-[700px]"></div>
-          <div className="bg-04 w-8/12 h-[700px] flex flex-col items-start justify-end gap-2 px-2 pb-8">
+          <div className="bg-04 w-8/12 h-[700px] flex flex-col items-start justify-end gap-1 px-2 pb-8">
             <h1 className="text-4xl tracking-[.20em] text-00 font-extrabold">
               {t("hi")}
             </h1>
-            <h2 className="text-4xl tracking-[.20em] text-00 h1-border-half font-extrabold">
+            <h2 className="text-4xl tracking-[.20em] text-00 font-extrabold">
               {t("everyone")}
             </h2>
             <div>
@@ -98,15 +99,24 @@ const Index = () => {
               >
                 contact me
               </a>
-
-              <a
-                href={cvLink}
-                download="Luciano_Balbiano_CV.pdf" // Asegúrate de que el nombre del archivo es el deseado
-                className="px-1 py-2 text-xl text-06 bg-02 border-2 border-06 hover:bg-07 hover:text-00 transition-colors"
-              >
-                download cv
-                <i className="bi bi-download w-6 pl-2"></i>
-              </a>
+              <div className="flex flex-col gap-2">
+                <a
+                  href={cvLinkEsp}
+                  download="Luciano_Balbiano_CV_ESP.pdf"
+                  className="px-1 py-2 text-xl text-06 bg-02 border-2 border-06 hover:bg-07 hover:text-00 transition-colors"
+                >
+                  Descargar CV (esp)
+                  <i className="bi bi-download w-6 pl-2"></i>
+                </a>
+                <a
+                  href={cvLinkEng}
+                  download="Luciano_Balbiano_CV_ENG.pdf"
+                  className="px-1 py-2 text-xl text-06 bg-02 border-2 border-06 hover:bg-07 hover:text-00 transition-colors"
+                >
+                  Download CV (eng)
+                  <i className="bi bi-download w-6 pl-2"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
