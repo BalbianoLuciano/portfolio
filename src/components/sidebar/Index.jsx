@@ -54,7 +54,7 @@ const Sidebar = () => {
       </div>
 
       <div className="relative border-gray-700 h-full">
-        <div
+         <div
           className="absolute left-1/2 transform -translate-x-1/2 border-l-4 border-06"
           style={{ height: `${lineHeight}px`, margin: "120px 0" }}
         ></div>
@@ -71,8 +71,8 @@ const Sidebar = () => {
             <div
               className={`absolute ${
                 index % 2 === 0
-                  ? "right-[132px] xl:right-[180px] 2xl:right-[222px] monitor:right-[287px]"
-                  : "left-[132px] xl:left-[180px] 2xl:left-[222px] monitor:left-[287px]"
+                  ? " right-full"
+                  : "left-full"
               } w-6 h-6 bg-06 border-2 border-02`}
             ></div>
             <h2

@@ -15,13 +15,13 @@ const Index = () => {
           <img
             src="images/cvpro.jpeg"
             alt="Profile"
-            className="w-150 h-150 xl:w-400 xl:h-400"
+            className="w-64 h-64 2xl:w-80 2xl:h-80"
           />
           <div className="flex flex-col pl-4">
-            <h1 className="text-7xl tracking-[.20em] xl:text-8xl 2xl:text-9xl font-extrabold text-05 2xl:tracking-[.35em]">
+            <h1 className="text-7xl xl:text-8xl 2xl:text-9xl font-extrabold text-05">
               {t("hi")}
             </h1>
-            <h2 className="text-7xl tracking-[.20em] xl:text-8xl 2xl:text-9xl h1-border-half font-extrabold text-05 2xl:tracking-[.35em] z-10">
+            <h2 className="text-7xl xl:text-8xl 2xl:text-9xl h1-border-half font-extrabold text-05 z-10">
               {t("everyone")}
             </h2>
           </div>
