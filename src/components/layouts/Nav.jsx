@@ -1,12 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import "../../styles/global.css";
+
+// Registrar ScrollToPlugin
+gsap.registerPlugin(ScrollToPlugin);
 
 const Nav = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    // Smooth Scroll usando GSAP cuando se hace clic en los links
+    const links = document.querySelectorAll("nav li a");
+
+    links.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute("href").substring(1); // Elimina el #
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          gsap.to(window, {
+            scrollTo: { y: targetElement.offsetTop, offsetY: 70 }, // Ajuste de desplazamiento
+            duration: 1.5,
+            ease: "power2.out",
+          });
+        }
+
+        // Cerrar el menú si está abierto
+        setIsOpen(false);
+      });
+    });
+
+    // Limpieza de listeners cuando el componente se desmonta
+    return () => {
+      links.forEach((link) => {
+        link.removeEventListener("click", null);
+      });
+    };
+  }, []); // No dependemos de isOpen, por eso el array de dependencias está vacío
 
   return (
     <header className="w-full lg:p-10">

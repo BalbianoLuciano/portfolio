@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import jobs from "../utils/jobs.json";
+
+// Registrar ScrollToPlugin
+gsap.registerPlugin(ScrollToPlugin);
 
 const Sidebar = () => {
   // Estado para manejar el ancho de la ventana
@@ -19,6 +24,28 @@ const Sidebar = () => {
     };
   }, []);
 
+  // Smooth scroll para el botón "Contact me"
+  useEffect(() => {
+    const contactButton = document.querySelector(".contact-button");
+
+    contactButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetElement = document.getElementById("contact");
+
+      if (targetElement) {
+        gsap.to(window, {
+          scrollTo: { y: targetElement.offsetTop, offsetY: 70 }, // Ajuste de desplazamiento si es necesario
+          duration: 1.5,
+          ease: "power2.out",
+        });
+      }
+    });
+
+    return () => {
+      contactButton.removeEventListener("click", null);
+    };
+  }, []);
+
   // Calcula la altura en px basada en el número de trabajos, ajusta según necesidad
   const lineHeight = jobs.length * (windowWidth >= 1280 ? 252 : 198);
   const itemTopOffset = windowWidth >= 1280 ? 280 : 220;
@@ -28,7 +55,7 @@ const Sidebar = () => {
       <div className="flex flex-col gap-5 px-4">
         <a
           href="#contact"
-          className="bg-05 text-2xl text-center xl:text-3xl 2xl:text-4xl hover:bg-00 hover:text-07 border-2 border-05 hover:border-2 text-00 py-4 px-2"
+          className="contact-button bg-05 text-2xl text-center xl:text-3xl 2xl:text-4xl hover:bg-00 hover:text-07 border-2 border-05 hover:border-2 text-00 py-4 px-2"
         >
           contact me
         </a>
