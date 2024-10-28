@@ -27,7 +27,7 @@ const Sidebar = () => {
     <div className="text-white px-3 py-8 xl:px-5 xl:py-16 space-y-4 h-full overflow-hidden">
       <div className="flex flex-col gap-5 px-4">
         <a
-          href="#contactme"
+          href="#contact"
           className="bg-05 text-2xl text-center xl:text-3xl 2xl:text-4xl hover:bg-00 hover:text-07 border-2 border-05 hover:border-2 text-00 py-4 px-2"
         >
           contact me
