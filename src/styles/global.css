@@ -23,7 +23,7 @@
 .h1-border-half::after {
   content: "";
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
   height: 10px;
   width: 35%;
   background-color: #557053;
