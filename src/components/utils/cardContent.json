@@ -15,9 +15,9 @@
     },
     {
       "id": 2,
-      "imageUrl": "/images/arquihub.PNG",
-      "link": "https://arquihub.vercel.app/",
-      "title": "arquihubTitle",
-      "technologies": ["react.js", "node.js", "tailwind"]
+      "imageUrl": "/images/aboutCM.png",
+      "link": "https://thecactusmedia.com/",
+      "title": "cactusTitle",
+      "technologies": ["astro.js", "ReactJs", "GSAP"]
     }
 ]

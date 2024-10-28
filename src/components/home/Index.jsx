@@ -5,8 +5,8 @@ import "../../styles/global.css";
 
 const Index = () => {
   const { t } = useTranslation();
-  const cvLinkEsp = "https://drive.google.com/uc?export=download&id=1uZEg0s2zWZDGhuZygqaQ1-Ec_6D3cJD3"; // Enlace de descarga directa para la versión ESP
-  const cvLinkEng = "https://drive.google.com/uc?export=download&id=1ZBxfxompWZ9NCcxtattN6b0DEQHraBxj"; // Enlace de descarga directa para la versión ENG
+  const cvLinkEsp = "https://drive.google.com/uc?export=download&id=1BFvjRYY4u_IAe7mFC03TxYa8104ZaYNH"; // Enlace de descarga directa para la versión ESP
+  const cvLinkEng = "https://drive.google.com/uc?export=download&id=1CMH8KCHWIhv4ad3BYsx8oPmvQPkaurJH"; // Enlace de descarga directa para la versión ENG
 
   return (
     <div className="" id="home">
