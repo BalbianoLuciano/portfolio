@@ -9,8 +9,8 @@ gsap.registerPlugin(ScrollToPlugin);
 const Sidebar = () => {
   // Estado para manejar el ancho de la ventana
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const cvLinkEsp = "https://drive.google.com/uc?export=download&id=1_ODzKN-mmPJvlMgaaYKZKmtVTcP1QNs9"; // Enlace de descarga directa para la versión ESP
-  const cvLinkEng = "https://drive.google.com/uc?export=download&id=1x4nQwLLzswhbMSTWsezYg6IPeX6oBZ2K"; // Enlace de descarga directa para la versión ENG
+  const cvLinkEsp = "https://drive.google.com/uc?export=download&id=13ogl9IgRkK8Nb2srt7vlmphw-tTLDJyB"; // Enlace de descarga directa para la versión ESP
+  const cvLinkEng = "https://drive.google.com/uc?export=download&id=1cIkCZGUJloxutPGBjW4o9Bfa8ju0MZ_k"; // Enlace de descarga directa para la versión ENG
 
   // Añadir un listener al tamaño de la ventana
   useEffect(() => {
