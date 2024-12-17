@@ -10,7 +10,7 @@ const Sidebar = () => {
   // Estado para manejar el ancho de la ventana
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const cvLinkEsp = "https://drive.google.com/uc?export=download&id=13ogl9IgRkK8Nb2srt7vlmphw-tTLDJyB"; // Enlace de descarga directa para la versión ESP
-  const cvLinkEng = "https://drive.google.com/uc?export=download&id=1cIkCZGUJloxutPGBjW4o9Bfa8ju0MZ_k"; // Enlace de descarga directa para la versión ENG
+  const cvLinkEng = "https://drive.google.com/uc?export=download&id=1RuNBOQLsNoXu-5lyu_IYVnvO-Z_QIQJP"; // Enlace de descarga directa para la versión ENG
 
   // Añadir un listener al tamaño de la ventana
   useEffect(() => {
